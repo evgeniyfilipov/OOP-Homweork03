@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1495095683 source:d:\c++\oop\praktikum\homework03\carsystem\main.cpp
+	"String.h"
+	<iostream>
+	"OwnerCarInfo.h"
+	"Car.h"
+	"Motorcycle.h"
+	"Truck.h"
+	"Trailer.h"
+
+1494840343 d:\c++\oop\praktikum\homework03\carsystem\string.h
+	<cstring>
+
+1495102454 source:d:\c++\oop\praktikum\homework03\carsystem\ownercarinfo.cpp
+	"OwnerCarInfo.h"
+
+1494840395 source:d:\c++\oop\praktikum\homework03\carsystem\string.cpp
+	"String.h"
+
+1495103346 d:\c++\oop\praktikum\homework03\carsystem\ownercarinfo.h
+	"String.h"
+
+1495061516 source:d:\c++\oop\praktikum\homework03\carsystem\vehicle.cpp
+	"Vehicle.h"
+	<iostream>
+
+1495060974 d:\c++\oop\praktikum\homework03\carsystem\vehicle.h
+	"OwnerCarInfo.h"
+
+1495095657 source:d:\c++\oop\praktikum\homework03\carsystem\car.cpp
+	"Car.h"
+	<iostream>
+
+1495095694 d:\c++\oop\praktikum\homework03\carsystem\car.h
+	"Vehicle.h"
+
+1495058046 source:d:\c++\oop\praktikum\homework03\carsystem\motorcycle.cpp
+	"Motorcycle.h"
+	<iostream>
+
+1495057663 d:\c++\oop\praktikum\homework03\carsystem\motorcycle.h
+	"Vehicle.h"
+
+1495058683 source:d:\c++\oop\praktikum\homework03\carsystem\truck.cpp
+	"Truck.h"
+	<iostream>
+
+1495058691 d:\c++\oop\praktikum\homework03\carsystem\truck.h
+	"Vehicle.h"
+
+1495059146 source:d:\c++\oop\praktikum\homework03\carsystem\trailer.cpp
+	"Trailer.h"
+
+1495058978 d:\c++\oop\praktikum\homework03\carsystem\trailer.h
+	"OwnerCarInfo.h"
+
