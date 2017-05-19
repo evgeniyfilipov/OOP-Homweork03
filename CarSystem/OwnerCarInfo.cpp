@@ -24,8 +24,28 @@ bool OwnerCarInfo::isLegit(String _plate) const
                 _plate[4] >= '0' && _plate[4] <= '9')
                 {
                     // Тук всичко свършвва с легитимацията :D
-                    if(_plate[5] >= 'A' && _plate[5] <= 'X' &&
-                       _plate[6] >= 'A' && _plate[6] <= 'X')
+                    if(_plate[5] == 'A' ||
+                       _plate[5] == 'B' ||
+                       _plate[5] == 'C' ||
+                       _plate[5] == 'E' ||
+                       _plate[5] == 'H' ||
+                       _plate[5] == 'K' ||
+                       _plate[5] == 'M' ||
+                       _plate[5] == 'O' ||
+                       _plate[5] == 'P' ||
+                       _plate[5] == 'T' ||
+                       _plate[5] == 'X' &&
+                       _plate[6] == 'A' ||
+                       _plate[6] == 'B' ||
+                       _plate[6] == 'C' ||
+                       _plate[6] == 'E' ||
+                       _plate[6] == 'H' ||
+                       _plate[6] == 'K' ||
+                       _plate[6] == 'M' ||
+                       _plate[6] == 'O' ||
+                       _plate[6] == 'P' ||
+                       _plate[6] == 'T' ||
+                       _plate[6] == 'X')
                     {
                         return true;
                     }
@@ -56,8 +76,28 @@ bool OwnerCarInfo::isLegit(String _plate) const
                 _plate[4] >= '0' && _plate[4] <= '9' &&
                 _plate[5] >= '0' && _plate[5] <= '9')
                 {
-                    if(_plate[6] >= 'A' && _plate[6] <= 'X' &&
-                       _plate[7] >= 'A' && _plate[7] <= 'X')
+                    if(_plate[6] == 'A' ||
+                       _plate[6] == 'B' ||
+                       _plate[6] == 'C' ||
+                       _plate[6] == 'E' ||
+                       _plate[6] == 'H' ||
+                       _plate[6] == 'K' ||
+                       _plate[6] == 'M' ||
+                       _plate[6] == 'O' ||
+                       _plate[6] == 'P' ||
+                       _plate[6] == 'T' ||
+                       _plate[6] == 'X' &&
+                       _plate[7] == 'A' ||
+                       _plate[7] == 'B' ||
+                       _plate[7] == 'C' ||
+                       _plate[7] == 'E' ||
+                       _plate[7] == 'H' ||
+                       _plate[7] == 'K' ||
+                       _plate[7] == 'M' ||
+                       _plate[7] == 'O' ||
+                       _plate[7] == 'P' ||
+                       _plate[7] == 'T' ||
+                       _plate[7] == 'X')
                     {
                         return true;
                     }
