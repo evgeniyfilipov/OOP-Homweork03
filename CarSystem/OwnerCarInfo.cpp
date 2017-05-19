@@ -1,45 +1,138 @@
 #include "OwnerCarInfo.h"
+#include <iostream>
+
+using namespace std;
+
+
+bool OwnerCarInfo::isLegit(String _plate) const
+{
+    if (_plate[0] == 'A' ||
+        _plate[0] == 'B' ||
+        _plate[0] == 'C' ||
+        _plate[0] == 'E' ||
+        _plate[0] == 'K' ||
+        _plate[0] == 'M' ||
+        _plate[0] == 'P' ||
+        _plate[0] == 'T' ||
+        _plate[0] == 'X' ||
+        _plate[0] == 'Y' ||
+        _plate[0] == 'H')
+        {
+            if (_plate[1] >= '0' && _plate[1] <= '9' &&
+                _plate[2] >= '0' && _plate[2] <= '9' &&
+                _plate[3] >= '0' && _plate[3] <= '9' &&
+                _plate[4] >= '0' && _plate[4] <= '9')
+                {
+                    // Тук всичко свършвва с легитимацията :D
+                    if(_plate[5] >= 'A' && _plate[5] <= 'X' &&
+                       _plate[6] >= 'A' && _plate[6] <= 'X')
+                    {
+                        return true;
+                    }
+                }
+        }
+    if (_plate[0] == 'C' && _plate[1] == 'A' ||
+        _plate[0] == 'C' && _plate[1] == 'B' ||
+        _plate[0] == 'C' && _plate[1] == 'C' ||
+        _plate[0] == 'C' && _plate[1] == 'O' ||
+        _plate[0] == 'C' && _plate[1] == 'T' ||
+        _plate[0] == 'C' && _plate[1] == 'H' ||
+        _plate[0] == 'C' && _plate[1] == 'M' ||
+        _plate[0] == 'B' && _plate[1] == 'H' ||
+        _plate[0] == 'B' && _plate[1] == 'P' ||
+        _plate[0] == 'B' && _plate[1] == 'T' ||
+        _plate[0] == 'E' && _plate[1] == 'B' ||
+        _plate[0] == 'E' && _plate[1] == 'H' ||
+        _plate[0] == 'K' && _plate[1] == 'H' ||
+        _plate[0] == 'O' && _plate[1] == 'B' ||
+        _plate[0] == 'P' && _plate[1] == 'A' ||
+        _plate[0] == 'P' && _plate[1] == 'B' ||
+        _plate[0] == 'P' && _plate[1] == 'K' ||
+        _plate[0] == 'P' && _plate[1] == 'P' ||
+        _plate[0] == 'T' && _plate[1] == 'X')
+        {
+            if (_plate[2] >= '0' && _plate[2] <= '9' &&
+                _plate[3] >= '0' && _plate[3] <= '9' &&
+                _plate[4] >= '0' && _plate[4] <= '9' &&
+                _plate[5] >= '0' && _plate[5] <= '9')
+                {
+                    if(_plate[6] >= 'A' && _plate[6] <= 'X' &&
+                       _plate[7] >= 'A' && _plate[7] <= 'X')
+                    {
+                        return true;
+                    }
+                }
+        }
+
+    return false;
+}
 
 double OwnerCarInfo::getCoef(String _plate) const
 {
-    if (_plate[0] == 'A')
-        return 1.2;
-    if (_plate[0] == 'H')
-        return 1.0;
-    if (_plate[0] == 'B')
-        return 0.9;
-    if (_plate[0] == 'C')
-        return 0.8;
-    if (_plate[0] == 'P')
-        return 0.9;
-    if (_plate[0] == 'T')
-        return 1.0;
-    if (_plate[0] == 'E')
-        return 0.6;
-    if (_plate[0] == 'X')
-        return 0.7;
-    if (_plate[0] == 'Y')
-        return 1.1;
-    if (_plate[0] == 'M')
-        return 0.6;
-    if (_plate[0] == 'K')
-        return 0.7;
-    if (_plate[0] == 'C' && _plate[1] == 'A')
-        return 0.8;
-    if (_plate[0] == 'C' && _plate[1] == 'B')
-        return 0.8;
-    if (_plate[0] == 'C' && _plate[1] == 'O')
-        return 0.8;
-    if (_plate[0] == 'C' && _plate[1] == 'C')
-        return 1.1;
-    if (_plate[0] == 'C' && _plate[1] == 'T')
-        return 0.7;
-    if (_plate[0] == 'C' && _plate[1] == 'M')
-        return 0.8;
-    if (_plate[0] == 'C' && _plate[1] == 'H')
-        return 0.6;
-    if (_plate[0] == 'P' && _plate[1] == 'A')
-        return 0.7;
+    if(isLegit(_plate) == true)
+    {
+        if (_plate[0] == 'A')
+            return 1.2;
+        if (_plate[0] == 'H')
+            return 1.0;
+        if (_plate[0] == 'B')
+            return 0.9;
+        if (_plate[0] == 'C')
+            return 0.8;
+        if (_plate[0] == 'P')
+            return 0.9;
+        if (_plate[0] == 'T')
+            return 1.0;
+        if (_plate[0] == 'E')
+            return 0.6;
+        if (_plate[0] == 'X')
+            return 0.7;
+        if (_plate[0] == 'Y')
+            return 1.1;
+        if (_plate[0] == 'M')
+            return 0.6;
+        if (_plate[0] == 'K')
+            return 0.7;
+        if (_plate[0] == 'C' && _plate[1] == 'A')
+            return 0.8;
+        if (_plate[0] == 'C' && _plate[1] == 'B')
+            return 0.8;
+        if (_plate[0] == 'C' && _plate[1] == 'O')
+            return 0.8;
+        if (_plate[0] == 'C' && _plate[1] == 'C')
+            return 1.1;
+        if (_plate[0] == 'C' && _plate[1] == 'T')
+            return 0.7;
+        if (_plate[0] == 'C' && _plate[1] == 'M')
+            return 0.8;
+        if (_plate[0] == 'C' && _plate[1] == 'H')
+            return 0.6;
+        if (_plate[0] == 'P' && _plate[1] == 'A')
+            return 0.7;
+        if (_plate[0] == 'P' && _plate[1] == 'B')
+            return 0.8;
+        if (_plate[0] == 'P' && _plate[1] == 'K')
+            return 0.7;
+        if (_plate[0] == 'P' && _plate[1] == 'P')
+            return 1.0;
+        if (_plate[0] == 'B' && _plate[1] == 'H')
+            return 0.5;
+        if (_plate[0] == 'B' && _plate[1] == 'P')
+            return 0.7;
+        if (_plate[0] == 'B' && _plate[1] == 'T')
+            return 0.6;
+        if (_plate[0] == 'K' && _plate[1] == 'H')
+            return 0.7;
+        if (_plate[0] == 'O' && _plate[1] == 'B')
+            return 0.6;
+        if (_plate[0] == 'E' && _plate[1] == 'H')
+            return 0.8;
+        if (_plate[0] == 'E' && _plate[1] == 'B')
+            return 0.9;
+        if (_plate[0] == 'T' && _plate[1] == 'X')
+            return 1.0;
+    }
+
 }
 
 OwnerCarInfo::OwnerCarInfo(String _name, int _EGN[10], String _date, String _plate, String _color)

@@ -54,3 +54,59 @@
 1495058978 d:\c++\oop\praktikum\homework03\carsystem\trailer.h
 	"OwnerCarInfo.h"
 
+1495095657 source:d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\car.cpp
+	"Car.h"
+	<iostream>
+
+1495095694 d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\car.h
+	"Vehicle.h"
+
+1495186321 d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\vehicle.h
+	"OwnerCarInfo.h"
+
+1495187557 d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\ownercarinfo.h
+	"String.h"
+
+1494840343 d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\string.h
+	<cstring>
+
+1495187653 source:d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\main.cpp
+	"String.h"
+	<iostream>
+	"OwnerCarInfo.h"
+	"Car.h"
+	"Motorcycle.h"
+	"Truck.h"
+	"Trailer.h"
+
+1495057663 d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\motorcycle.h
+	"Vehicle.h"
+
+1495058691 d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\truck.h
+	"Vehicle.h"
+
+1495058978 d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\trailer.h
+	"OwnerCarInfo.h"
+
+1495058046 source:d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\motorcycle.cpp
+	"Motorcycle.h"
+	<iostream>
+
+1494840395 source:d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\string.cpp
+	"String.h"
+
+1495059146 source:d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\trailer.cpp
+	"Trailer.h"
+
+1495058683 source:d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\truck.cpp
+	"Truck.h"
+	<iostream>
+
+1495187561 source:d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\vehicle.cpp
+	"Vehicle.h"
+	<iostream>
+
+1495188221 source:d:\c++\oop\praktikum\homework03\oop-homweork03\carsystem\ownercarinfo.cpp
+	"OwnerCarInfo.h"
+	<iostream>
+

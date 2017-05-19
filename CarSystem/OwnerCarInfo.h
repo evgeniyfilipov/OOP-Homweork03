@@ -10,10 +10,12 @@ private:
     String date;
     String color;
 
-    bool isLegit(String _plate) const;
+
 
 
 public:
+    bool isLegit(String _plate) const;
+
     OwnerCarInfo(String _name, int _EGN[10], String _date, String _plate, String _color);
     OwnerCarInfo();
     OwnerCarInfo(const OwnerCarInfo& other);

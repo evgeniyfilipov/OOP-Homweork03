@@ -6,6 +6,7 @@
 #include "Truck.h"
 #include "Trailer.h"
 
+
 using namespace std;
 
 int main()
@@ -24,5 +25,6 @@ int main()
 
     Car c1("Evgeniy", EGN1, "24.07.2016", "H0001BP", "Grey", Engine::Diesel, 131, 1900, 4, EuroStandart::Euro5, Coupe::Sedan);
     cout << c1.getGrajdanska() << endl;
-    return 0;
+    cout << c1.getTax() << endl;
+    cout << c1.isLegit(c1.getPlate()) << endl;
 }

@@ -135,15 +135,39 @@ void Vehicle::setStandart(EuroStandart _eStandart)
     eStandart = _eStandart;
 }
 
+int Vehicle::getTax() const
+{
+    int startTax = 0;
+    if (OwnerCarInfo::isLegit(this->getPlate()) == true)
+    {
+        if(this->getHorsePower() <= 101)
+            startTax = 10;
+        if(this->getHorsePower() > 101)
+            startTax = 100;
+        return (startTax + this->getHorsePower()) * OwnerCarInfo::getCoef(this->getPlate());
+    }
+    else
+    {
+        cout << "Invalid registration plate!" << endl;
+    }
+
+}
+
 int Vehicle::getGrajdanska() const
 {
     int tax = 0;
-    if (getAge(this->getEGN()) >= 20 && getAge(this->getEGN()) < 30)
-        tax = 40;
-     if (getAge(this->getEGN()) >= 30 && getAge(this->getEGN()) < 45)
-        tax = 30;
-    if (getAge(this->getEGN()) >= 45)
-        tax = 20;
-
-    return (50 + tax) * OwnerCarInfo::getCoef(this->getPlate());
+    if (OwnerCarInfo::isLegit(this->getPlate()) == true)
+    {
+        if (getAge(this->getEGN()) >= 20 && getAge(this->getEGN()) < 30)
+            tax = 40;
+         if (getAge(this->getEGN()) >= 30 && getAge(this->getEGN()) < 45)
+            tax = 30;
+        if (getAge(this->getEGN()) >= 45)
+            tax = 20;
+        return (50 + tax) * OwnerCarInfo::getCoef(this->getPlate());
+    }
+    else
+    {
+        cout << "Invalid registration plate!" << endl;
+    }
 }
